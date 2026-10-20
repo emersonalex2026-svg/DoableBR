@@ -1,4 +1,4 @@
-import { Hono } from "hono";
+import { Hono, type Context } from "hono";
 import {
   getDevServerInternalUrl,
   getDevServerInternalUrlWhenReady,
@@ -428,7 +428,7 @@ function renderInstallingDepHTML(pkg: string): string {
  * See BUG-2026-07-15-lovable-ai-chat.
  */
 export async function handleLovableChatBridge(
-  c: Parameters<Parameters<typeof previewRoutes.all>[1]>[0],
+  c: Context,
   projectId: string,
 ): Promise<Response> {
   const [row] = await sql<{ workspace_id: string }[]>`
