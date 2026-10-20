@@ -19,12 +19,10 @@ import { TracingInit } from "@/components/tracing-init";
 export const dynamic = "force-dynamic";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const en = (await getLocale()) === "en";
   return {
-    title: en ? "Doable | Dream it. Do it. Done." : "Doable | 从想法到应用",
-    description: en
-      ? "Tell AI what you want to do and Doable gets it done. From idea to deployed app in minutes."
-      : "Doable。通过自然语言生成、预览与发布应用。",
+    title: "Tandi | Imagine. Crie. Publique.",
+    description:
+      "Transforme suas ideias em aplicações com inteligência artificial, da primeira descrição à publicação.",
     keywords: ["AI", "app builder", "code generation", "full-stack", "no-code"],
     icons: {
       icon: [

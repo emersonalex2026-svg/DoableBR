@@ -330,8 +330,8 @@ function LoginPageInner() {
         {ui("Sign in to your account")}{" "}
       </h2>
 
-      {/* OAuth Buttons */}
-      <div className="space-y-3">
+      {/* OAuth buttons hidden per Tandi branding preference */}
+      <div className="hidden">
         <Button
           variant="outline"
           className="w-full rounded-xl"
@@ -360,8 +360,8 @@ function LoginPageInner() {
         </Button>
       </div>
 
-      {/* Divider */}
-      <div className="relative my-6">
+      {/* Social login divider hidden */}
+      <div className="hidden">
         <div className="absolute inset-0 flex items-center">
           <span className="w-full border-t border-[hsl(var(--border))]" />
         </div>

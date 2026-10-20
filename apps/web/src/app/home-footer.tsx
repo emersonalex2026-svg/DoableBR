@@ -3,30 +3,30 @@ import { Twitter, Github, Linkedin } from "lucide-react";
 
 const linkColumns = [
   {
-    title: "Product",
+    title: "Produto",
     links: [
-      { label: "Features", href: "/#features" },
-      { label: "Pricing", href: "/#pricing" },
-      { label: "Templates", href: "/templates" },
-      { label: "Changelog", href: "/changelog" },
+      { label: "Funcionalidades", href: "#" },
+      { label: "Planos e preços", href: "#" },
+      { label: "Modelos prontos", href: "#" },
+      { label: "Novidades", href: "#" },
     ],
   },
   {
-    title: "Resources",
+    title: "Recursos",
     links: [
-      { label: "Documentation", href: "/help" },
-      { label: "GitHub", href: "https://github.com/doable-me/doable" },
-      { label: "Support", href: "/contact" },
-      { label: "Status", href: "https://status.doable.me" },
+      { label: "Documentação", href: "#" },
+      { label: "GitHub", href: "#" },
+      { label: "Suporte", href: "#" },
+      { label: "Status do serviço", href: "#" },
     ],
   },
   {
-    title: "Company",
+    title: "Empresa",
     links: [
-      { label: "About", href: "/about" },
-      { label: "Contact", href: "/contact" },
-      { label: "Privacy", href: "/privacy" },
-      { label: "Terms", href: "/terms" },
+      { label: "Sobre nós", href: "#" },
+      { label: "Contato", href: "#" },
+      { label: "Privacidade", href: "#" },
+      { label: "Termos de uso", href: "#" },
     ],
   },
 ];
@@ -38,40 +38,40 @@ export function HomeFooter() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
           {/* Brand column */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="#" className="flex items-center gap-2">
               <div className="flex h-7 w-7 items-center justify-center rounded-md bg-gradient-to-br from-brand-500 to-brand-300">
                 <span className="text-xs font-bold text-white self-end mb-1">D</span>
                 <span className="h-2 w-2 rounded-full bg-violet-700 self-end mb-2 ml-0.5 shrink-0" />
               </div>
-              <span className="text-base font-semibold text-white">Doable</span>
+              <span className="text-base font-semibold text-white">Tandi</span>
             </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-gray-500">
-              Tell AI what you want to do and Doable gets it done.
+              Tell AI what you want to do and Tandi gets it done.
               From idea to deployed app in minutes.
             </p>
             <div className="mt-4 flex gap-4">
               <a
-                href="https://twitter.com/doable_me"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
+
+
                 className="text-gray-600 transition-colors hover:text-gray-400"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="https://github.com/doable-me/doable"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
+
+
                 className="text-gray-600 transition-colors hover:text-gray-400"
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/company/doable-works"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
+
+
                 className="text-gray-600 transition-colors hover:text-gray-400"
                 aria-label="LinkedIn"
               >
@@ -92,8 +92,8 @@ export function HomeFooter() {
                     {link.href.startsWith("http") ? (
                       <a
                         href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
+
+
                         className="text-sm text-gray-600 transition-colors hover:text-gray-400"
                       >
                         {link.label}
@@ -118,19 +118,19 @@ export function HomeFooter() {
             &copy; {new Date().getFullYear()} Doable Works LLC. All rights reserved.
           </p>
           <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-gray-600">
-            <Link href="/terms" className="hover:text-gray-400">
+            <Link href="#" className="hover:text-gray-400">
               Terms
             </Link>
-            <Link href="/privacy" className="hover:text-gray-400">
+            <Link href="#" className="hover:text-gray-400">
               Privacy
             </Link>
-            <Link href="/cookies" className="hover:text-gray-400">
+            <Link href="#" className="hover:text-gray-400">
               Cookies
             </Link>
-            <Link href="/acceptable-use" className="hover:text-gray-400">
+            <Link href="#" className="hover:text-gray-400">
               Acceptable Use
             </Link>
-            <Link href="/dmca" className="hover:text-gray-400">
+            <Link href="#" className="hover:text-gray-400">
               DMCA
             </Link>
           </div>

@@ -53,11 +53,11 @@ export default function HomePage() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-300">
-              <span className="text-sm font-bold text-white self-end mb-1">D</span>
+              <span className="text-sm font-bold text-white self-end mb-1">T</span>
               <span className="h-2 w-2 rounded-full bg-violet-700 self-end mb-2 ml-0.5 shrink-0" />
             </div>
             <span className="text-lg font-semibold tracking-tight text-white">
-              Doable
+              Tandi
             </span>
           </Link>
 
@@ -67,25 +67,25 @@ export default function HomePage() {
               href="#features"
               className="text-sm text-gray-400 transition-colors hover:text-white"
             >
-              Solutions
+              Soluções
             </Link>
             <Link
               href="#how-it-works"
               className="text-sm text-gray-400 transition-colors hover:text-white"
             >
-              Resources
+              Como funciona
             </Link>
             <Link
               href="#pricing"
               className="text-sm text-gray-400 transition-colors hover:text-white"
             >
-              Pricing
+              Planos
             </Link>
             <Link
               href="#community"
               className="text-sm text-gray-400 transition-colors hover:text-white"
             >
-              Community
+              Comunidade
             </Link>
           </div>
 
@@ -95,13 +95,13 @@ export default function HomePage() {
               href="/login"
               className="hidden rounded-full border border-gray-700 px-4 py-1.5 text-sm text-gray-300 transition-colors hover:border-gray-500 hover:text-white sm:inline-block"
             >
-              Log in
+              Entrar
             </Link>
             <Button
               asChild
               className="rounded-full bg-white px-5 text-sm font-medium text-black hover:bg-gray-200"
             >
-              <Link href="/signup">Get started</Link>
+              <Link href="/signup">Começar</Link>
             </Button>
           </div>
         </div>
@@ -126,10 +126,10 @@ export default function HomePage() {
         {/* Content */}
         <div className="relative z-10 mx-auto w-full max-w-3xl text-center">
           <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            Dream it. Do it. Done.
+            Da ideia à aplicação, sem complicação.
           </h1>
           <p className="mb-12 text-base text-gray-400 sm:text-lg">
-            Say it. Doable does it.
+            Sua ideia ganha vida com Tandi.
           </p>
 
           {/* Prompt Input Box */}
@@ -138,7 +138,7 @@ export default function HomePage() {
               <textarea
                 value={prompt}
                 onChange={(e) => setPrompt(e.target.value)}
-                placeholder="What do you want Doable to do?"
+                placeholder="O que você quer criar com Tandi?"
                 rows={3}
                 className="w-full resize-none bg-transparent px-2 pt-1 text-sm text-white placeholder:text-gray-500 focus:outline-none sm:text-base"
                 onKeyDown={(e) => {
@@ -154,7 +154,7 @@ export default function HomePage() {
                   <button
                     type="button"
                     className="rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-800 hover:text-gray-300"
-                    title="Attach file"
+                    title="Anexar arquivo"
                   >
                     <Plus className="h-5 w-5" />
                   </button>
@@ -163,14 +163,14 @@ export default function HomePage() {
                   <button
                     type="button"
                     className="rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-800 hover:text-gray-300"
-                    title="Screenshot"
+                    title="Captura de tela"
                   >
                     <MonitorSmartphone className="h-5 w-5" />
                   </button>
                   <button
                     type="button"
                     className="rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-800 hover:text-gray-300"
-                    title="Voice input"
+                    title="Entrada por voz"
                   >
                     <Mic className="h-5 w-5" />
                   </button>
@@ -191,7 +191,7 @@ export default function HomePage() {
       {/* ─── Social Proof Bar ────────────────────────────────── */}
       <section className="relative z-10 border-t border-gray-800/50 bg-[#0a0a0a] py-16">
         <p className="mb-8 text-center text-sm text-gray-500">
-          Teams who do more, do it with Doable
+          Mais produtividade, mais possibilidades com Tandi.
         </p>
         <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-x-12 gap-y-6 px-4 opacity-40">
           {["Zendesk", "Uber", "Microsoft", "ElevenLabs", "HubSpot"].map(
@@ -211,27 +211,27 @@ export default function HomePage() {
       <section id="how-it-works" className="relative z-10 py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-center text-3xl font-bold sm:text-4xl">
-            How you Do it with Doable
+            Como Tandi funciona
           </h2>
           <div className="mt-16 grid gap-12 md:grid-cols-3">
             {[
               {
                 icon: Lightbulb,
-                title: "Say what you want to do",
+                title: "Conte o que você quer criar",
                 description:
-                  "Describe your app, drop in screenshots, or share docs. Doable gets it.",
+                  "Descreva sua aplicação, envie capturas de tela ou compartilhe documentos. Tandi ajuda a transformar sua ideia em realidade.",
               },
               {
                 icon: Wand2,
-                title: "Watch Doable doing it",
+                title: "Veja sua ideia ganhar vida",
                 description:
-                  "AI writes the code, builds the UI, and sets up the backend while you watch.",
+                  "A inteligência artificial escreve o código, cria a interface e configura o back-end enquanto você acompanha.",
               },
               {
                 icon: Send,
-                title: "Done. Ship it.",
+                title: "Pronto. É hora de publicar.",
                 description:
-                  "One click deploy. Custom domains, SSL, and global CDN all done for you.",
+                  "Publique com um clique, com domínio personalizado, SSL e CDN global.",
               },
             ].map((step) => (
               <div key={step.title} className="text-center">
@@ -252,33 +252,33 @@ export default function HomePage() {
       <section id="features" className="relative z-10 border-t border-gray-800/50 py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-center text-3xl font-bold sm:text-4xl">
-            Everything you need to get it done
+            Tudo o que você precisa para tirar sua ideia do papel
           </h2>
           <p className="mx-auto mb-16 max-w-xl text-center text-gray-400">
-            All the tools built in so you keep doing, not configuring. Doable handles the rest.
+            As ferramentas essenciais já estão integradas para você se concentrar na criação. Tandi cuida do restante.
           </p>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 icon: Gauge,
-                title: "Lightning fast",
-                desc: "Optimized builds and edge deployment for sub-second load times.",
+                title: "Velocidade impressionante",
+                desc: "Aplicações otimizadas e distribuição eficiente para carregamento rápido.",
               },
               {
                 icon: Lock,
-                title: "Secure by default",
-                desc: "Enterprise-grade security with automatic SSL and DDoS protection.",
+                title: "Segurança desde o início",
+                desc: "Segurança integrada com SSL automático e proteção contra ataques DDoS.",
               },
               {
                 icon: Earth,
-                title: "Global CDN",
-                desc: "Your app served from 200+ edge locations worldwide.",
+                title: "CDN global",
+                desc: "Sua aplicação distribuída por uma rede global de servidores.",
               },
               {
                 icon: Braces,
-                title: "Full code access",
-                desc: "Export your code anytime. No lock-in, ever.",
+                title: "Acesso total ao código",
+                desc: "Exporte seu código quando quiser. Seu projeto continua sob seu controle.",
               },
             ].map((item) => (
               <div
@@ -308,29 +308,29 @@ export default function HomePage() {
 
           <div className="relative">
             <h2 className="mb-4 text-3xl font-bold sm:text-4xl lg:text-5xl">
-              Ready to do this? Doable is.
+              Sua próxima grande ideia começa aqui.
             </h2>
             <p className="mx-auto mb-8 max-w-xl text-gray-400">
-              Thousands of makers are already doing it with Doable.
-              Start for free. No credit card required.
+              Junte-se a quem já está transformando ideias em aplicações com Tandi.
+              Comece gratuitamente. Não é necessário cartão de crédito.
             </p>
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button
                 asChild
                 className="h-12 rounded-full bg-white px-8 text-sm font-semibold text-black hover:bg-gray-200"
               >
-                <Link href="/signup">Start doing for free</Link>
+                <Link href="/signup">Comece a criar gratuitamente</Link>
               </Button>
               <Button
                 asChild
                 variant="ghost"
                 className="h-12 rounded-full px-8 text-sm text-gray-400 hover:text-white"
               >
-                <Link href="#how-it-works">Learn more</Link>
+                <Link href="#how-it-works">Saiba como funciona</Link>
               </Button>
             </div>
             <p className="mt-4 text-xs text-gray-600">
-              Free forever for personal projects. Just do it with Doable.
+              Gratuito para projetos pessoais. Comece a criar com Tandi.
             </p>
           </div>
         </div>

@@ -21,12 +21,12 @@ export default function AuthLayout({
           <div className="mb-8 text-center">
             <a href="/" className="inline-flex items-center gap-1">
               <span className="text-3xl font-bold tracking-tight text-[hsl(var(--foreground))]">
-                Doable
+                Tandi
               </span>
               <span className="inline-block h-2.5 w-2.5 rounded-full bg-brand-700" />
             </a>
             <p className="mt-2 text-sm text-[hsl(var(--muted-foreground))]">
-              AI-powered application builder
+              Crie aplicações com inteligência artificial
             </p>
           </div>
 
@@ -37,19 +37,19 @@ export default function AuthLayout({
 
           {/* Footer */}
           <p className="mt-6 text-center text-xs text-[hsl(var(--muted-foreground))]">
-            By continuing, you agree to our{" "}
+            Ao continuar, você concorda com nossos{" "}
             <a
               href="/terms"
               className="underline hover:text-[hsl(var(--foreground))]"
             >
-              Terms of Service
+              Termos de uso
             </a>{" "}
-            and{" "}
+            e{" "}
             <a
               href="/privacy"
               className="underline hover:text-[hsl(var(--foreground))]"
             >
-              Privacy Policy
+              Política de privacidade
             </a>
             .
           </p>
